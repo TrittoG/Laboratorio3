@@ -1,0 +1,59 @@
+table, th,tr,td
+{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+
+table
+{
+    width: 2000px;
+}
+
+
+tr:nth-child(even) /*odd para impares*/
+{
+    background-color: rgba(255,0,0, 0.8);
+    transition: background-color 5s;
+}
+
+tr:nth-child(odd) /*odd para impares*/
+{
+    background-color: rgba(0,0,255, 0.8);
+}
+
+tr:nth-child(even):hover
+{
+    background-color: rgba(0,0,255, 0.6);
+}
+tr:nth-child(odd):hover
+{
+    background-color: rgba(255,0,0, 0.3);
+}
+
+td
+{
+    height: 50px;
+    text-align: center;
+    /*vertical-align: top;*/
+
+}
+
+th
+{
+    padding: 20px;
+}
+
+tr:hover
+{
+    background-color: rgba(0, 245,10, 1);
+}
+
+.overflowx
+{
+    overflow-x:scroll;
+}
+
+.overflowy
+{
+    overflow-y: hidden;
+}

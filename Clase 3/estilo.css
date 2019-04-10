@@ -1,0 +1,31 @@
+div
+{
+    color:blue;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-top-color: black;
+    border-color: green;
+    padding: 50px;
+    margin: 10px,0,0,0;
+    border: 8px,2px,0px,2px;
+}
+
+#miParrafo
+{
+    color:rgba(255, 255, 255, 1); /*el ultimo es la opacacidad*/
+   
+}
+
+p
+{
+    color: yellow;
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 2em;
+}
+
+body
+{
+    background-color: rgb(66, 17, 17);
+}
