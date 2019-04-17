@@ -1,0 +1,279 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+span div
+{
+    color: blue;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+span p
+{
+    margin-right: 500px;
+    margin-left: 200px;
+    font-size: 150%;
+}
+
+
+ul, ol {
+    list-style:none;
+    font-size: 15pt;
+}
+
+
+
+.nav > li {
+    float: left;
+    width: 20%;
+}
+
+.nav li a {
+    background-color: deeppink;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 12px;
+    display:block;
+    
+}
+
+
+
+.nav li a:hover {
+    background-color: palevioletred;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:100%;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li a 
+{
+    position:relative;
+    background-color: deeppink;
+}
+
+.nav li ul li
+{
+    border-right: none; 
+    width: 20%;
+}
+
+
+table
+{
+    color: blue;
+    width: 500px;
+    margin: 0;
+    float: right;
+    padding-left: 2%;
+    padding-top: 2%;
+    
+}
+
+table a
+{
+    text-decoration: none;
+}
+
+table thead
+{
+    float: left;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20pt;
+}
+
+table tbody
+{
+    text-align: left;
+    font-size: 15pt;
+}
+
+table tbody tr td
+{
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+button
+{
+    color: white;
+    background-color: blue;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+span img
+{
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+    margin-left: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+#fotoportada
+{
+    width: 600px;
+    margin-left: 200px;
+}
+
+
+
+/*-------footer---------*/
+
+footer
+{
+    background-color: deeppink;
+    color: white;  
+    padding-bottom: 1%;
+    margin-top: 10%;
+    
+}
+
+footer div 
+{
+    float:left; 
+    width:35%;
+    margin-left:15%;
+}
+
+footer div h4
+{
+ 	text-align:center;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    font-size: 150%;
+
+}
+
+#links
+{
+    margin-top: 6%;
+}
+
+#copy
+{
+    clear: both;
+    text-align: center;
+    margin: 0;
+    padding-top: 2%;
+}
+
+
+
+.lista 
+{
+    min-width:100%;
+    list-style-type: none;
+    padding-top: 20px;
+    width: 20%;
+}
+
+.lista li
+{
+    display:inline-block; 
+    width:18%
+}
+
+
+.lista li a
+{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    float: right;
+    padding-right: 4%;
+    text-align: center;
+    width: 100%;
+}
+
+.lista li a:hover
+{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+
+
+/*------------------------RESPONSIVE----------------------------*/
+
+@media only screen and (max-width: 800px) 
+{
+    /*-------IMAGENES-----*/
+    span img
+    {
+        margin-left: 10%;
+    }
+
+    #fotoportada
+    {
+        width: 350px;
+        margin-left: 10%;
+    }
+
+    span div
+    {
+        margin-left: 10%;
+    }
+
+    span p
+    {
+        margin: 0;
+        font-size: 30px;
+        margin-left: 80px;
+        margin-right: 0px;
+    }    
+
+    table thead
+    {
+        float: right;
+        padding-right: 0;
+    }
+    table tbody tr td a
+    {
+        float: right;
+    }
+
+    #links
+    {
+        float:left; 
+        width:100%;
+        margin-left:5%;
+    }
+
+    #sobrenosotros
+    {
+        float:left; 
+        width:80%;
+        margin-left:15%;
+    }
+
+}

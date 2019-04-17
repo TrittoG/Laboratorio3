@@ -1,0 +1,20 @@
+body
+{
+    background-color: rgb(29, 76, 90);
+}
+
+p
+{
+    color: grey;
+}
+
+h1
+{
+    color: coral;
+    font-size: 40px;
+}
+
+#cont p
+{
+    font-size: 30px;
+}
