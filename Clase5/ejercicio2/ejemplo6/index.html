@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <h2>Lenguajes</h2>
+
+
+    <div id="miDiv"></div>
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+
+        var btn = document.getElementById('btnEjecutar');
+        btn.addEventListener('click', Ejecutar);
+
+
+        function Ejecutar() {
+           
+            var div = document.getElementById('miDiv');
+            var imagen = document.createElement('img');
+            
+            var texto = document.createTextNode("Hola mundo");
+
+            imagen.setAttribute('src', './gato.jpg');
+            imagen.setAttribute('alt', 'imagen de gato');
+            
+            imagen.setAttribute('height', '20px');
+
+            div.appendChild(imagen);
+            /* 
+            while(true)
+            {
+                console.log("Bucle");
+            } */
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

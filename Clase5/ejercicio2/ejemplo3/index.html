@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <h2>Lenguajes</h2>
+
+    <div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <button id="btnEjecutar">Ejecutar</button>
+
+    <script>
+
+        var btn = document.getElementById('btnEjecutar');
+        btn.addEventListener('click', Ejecutar);
+
+
+        function Ejecutar() {
+            //console.log("Hola mundo");
+            var lista = document.getElementsByTagName('ul')[0];
+
+            //padre de lista. osea el div
+            var padre = lista.parentNode;
+
+            padre.style.backgroundColor = 'pink';
+            padre.style.display = 'inline-block';
+
+            var primerHijo = lista.firstElementChild;
+            var ultimoHijo = lista.lastElementChild;
+            //console.log(ultimoHijo.textContent);
+
+            while(ultimoHijo != null)
+            {
+                console.log(ultimoHijo.textContent);
+                ultimoHijo = ultimoHijo.previousElementSibling;
+            }
+
+
+
+
+
+
+
+
+
+            
+            /* 
+            while(true)
+            {
+                console.log("Bucle");
+            } */
+
+             
+
+
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
