@@ -21,26 +21,26 @@ function cargarTabla()
 
     var cabecera = document.createElement('tr');
 
-    var maximo = 0;
-    var contador= 0;
+    // var maximo = 0;
+    // var contador= 0;
 
-    for(var g in personas)
-    {
-        //console.log(g);
-        for(var h in personas[g])
-        {
-            contador = contador + 1;
+    // for(var g in personas)
+    // {
+    //     //console.log(g);
+    //     for(var h in personas[g])
+    //     {
+    //         contador = contador + 1;
            
-        }
-        if(contador>maximo)
-        {
-            maximo = contador;
-        }
-        //console.log(maximo);
-    }
+    //     }
+    //     if(contador>maximo)
+    //     {
+    //         maximo = contador;
+    //     }
+    //     //console.log(maximo);
+    // }
    
 
-    for(var clave in personas[maximo])
+    for(var clave in personas[0])
     {
         var th = document.createElement('th');
 
